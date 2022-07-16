@@ -147,3 +147,24 @@ a, .profile_link {
     width: 20rem;
 }
 
+@media (max-width: 900px) {
+    .card {
+        width: 80%;
+    }
+    .profile_settings {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .adjustSize {
+        width: 90%;
+    }
+    .profile_info {
+        width: 80%;
+    }
+    .profile_numbers {
+        width: 80%;
+    }
+}
+

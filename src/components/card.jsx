@@ -48,7 +48,7 @@ export default function Card() {
         <div className="card">    
             <div className="about">
                 <div className="image">
-                    <img src={img} alt="img" />
+                    <img src={img} alt="" />
                 </div>
                 <div className="profile_information">
                     <b><p className='name pi'>{name}</p></b>
