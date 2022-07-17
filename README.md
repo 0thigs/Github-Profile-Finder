@@ -1,6 +1,13 @@
-In the project directory, you can run:
+### To install the necessary packages type:
 
-### `npm start`
+`npm install`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Now, to authenticate your validation in the github Api, go to:
+
+`src/components/card.jsx`
+
+### On line 24, change: `"process.env.REACT_APP_TOKEN"` to your github validation token.
+
+### After that, you can start the application with:
+
+`npm start`
