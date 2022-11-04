@@ -1,3 +1,5 @@
+//@ts-check
+
 import './card.css'
 import React from "react";
 import { useState } from 'react';
@@ -5,6 +7,7 @@ import { BsSearch } from 'react-icons/bs'
 
 export default function Card() {
     const baseUrl = "https://api.github.com/users/"
+    const [input, setInput] = useState("")
     const [user, setUser] = useState("")
     const [name, setName] = useState("")
     const [bio, setBio] = useState("")
@@ -15,7 +18,6 @@ export default function Card() {
     const [link, setLink] = useState("")
 
     function getUser() {
-        let input = document.getElementById("input").value
         setUser(input)
     }
     fetch(baseUrl+user, {
@@ -41,7 +43,7 @@ export default function Card() {
 
     <div className="container">
         <div className="search">
-            <input type="text" placeholder='Search a Github Username' id='input'/> 
+            <input type="text" placeholder='Search a Github Username' onChange={(e) => {setInput(e.target.value)}} id='input'/> 
             <button onClick={getUser} > <BsSearch /> </button>
         </div>
         
